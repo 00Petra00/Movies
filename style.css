@@ -1,0 +1,222 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+h1{
+    position: relative;
+    margin-top: 20px;
+    margin-left: 20px;
+}
+
+#menu{
+    position: relative;
+}
+
+#menu ul li {
+    list-style: none;
+    display: inline-block;
+    margin: 0 2vw;
+    float: right;
+    padding: 1vw;
+}
+
+#menu ul li a {
+    text-decoration: none;
+    text-transform: uppercase;
+    color: black;
+    font-size: 25px;
+    font-weight: bold;
+}
+
+#menu ul li a:hover {
+    color: beige;
+    transition: all 700ms;
+    cursor: pointer;
+}
+
+#bg{
+    width: 100vw;
+    height: 100vh;
+    opacity: 50%;
+    position: absolute;
+}
+
+.bg2{
+    background-color: rgba(91, 91, 91, 0.94);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.bg3{
+    background-color: rgba(17, 17, 17, 0.94);
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+
+/*****************************************************************************************/
+.box{
+    background-color: rgba(0, 0, 0, 0.85);
+    width: 26vw;
+    position: absolute;
+    margin: 30vh 37vw;
+    box-shadow: 8px 8px 15px rgba(0, 0, 0, 0.5);
+
+}
+
+.inputBox{
+    position: relative;
+    width: 60%;
+    margin: 30px auto 10px auto;
+}
+.inputBox input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid black;
+    background-color: #fff;
+    border-radius: 5px;
+    outline: none;
+    color: black;
+    font-size: 1em;
+    transition: 0.5s;
+
+}
+
+.inputBox span {
+    position: absolute;
+    left: 0;
+    top: -30px;
+    padding: 10px;
+    pointer-events: none;
+    font-size: 1em;
+    color: #ece6e0;
+    text-transform: uppercase;
+    transition: 0.5s;
+}
+
+.inputBox input:valid~span,
+.inputBox input:focus~span {
+    color: black;
+    transform: translateX(15px) translateY(25px);
+    font-size: 0.65em;
+    padding: 0 10px;
+    background-color: #fff;
+    border-left: 1px solid black;
+    border-right: 1px solid black;
+    letter-spacing: 0.2em;
+}
+
+.inputBox input:valid,
+.inputBox input:focus {
+    border: 1px solid black;
+}
+
+/*****************************************************************************************/
+.button{
+    display: flex;
+    /*justify-content: center;*/
+    /*align-items: center;*/
+}
+.button input{
+    position: relative;
+    margin: 20px auto;
+    background-color: rgba(61, 60, 60, 0.75);
+    padding: 8px;
+    border-radius: 8px;
+    border: 1px black solid;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 3px 8px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.button input:hover{
+    background-color: rgba(33, 32, 32, 0.82);
+    color: white;
+    cursor: pointer;
+}
+
+/*****************************************************************************************/
+#grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 0;
+}
+
+
+.pos img{
+    width: 10vw;
+    display: block;
+    border: solid black;
+    border-radius: 5px;
+    margin: 5% auto 2%;
+}
+
+.text{
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
+
+.b{
+    width: 130px;
+    margin: 0 20px;
+    text-align: center;
+    display: flex;
+    float: left;
+    /*background-color: white;*/
+}
+
+.b img{
+    width: 15%;
+    /*margin-left: 10px;*/
+}
+.title{
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}
+
+/*********************************************************/
+
+.tbox{
+    position: absolute;
+    border-radius: 5px;
+    margin-top: 70px;
+    margin-left: 51px;
+    top: 0;
+    width: 10%;
+    height: 32.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: rgb(0,0,0,0.6);
+    color: white;
+    opacity: 0;
+    transition: opacity 0.4s;
+}
+
+.tbox > * {
+    transform: translateY(20px);
+    transition: transform 0.4s;
+}
+
+.tbox:hover{
+    opacity: 1;
+}
+
+.tbox:hover > *{
+    transform: translateY(0);
+}
+
+.ttext{
+    font-size: 20px;
+    font-weight: bold;
+    /*font-style: italic;*/
+
+}
+
+/*********************************************/

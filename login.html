@@ -2,12 +2,32 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Movies</title>
-    <h1>Movies</h1>
+    <title>Login</title>
     <link rel="stylesheet" href="../style.css"/>
-    <img src="Pictures/bg.png" alt="Ez egy példa kép" id="bg" title="Background">
 </head>
 <body>
-
+<!--<nav id="menu">-->
+<!--    <ul>-->
+<!--        <li><a href="index.php">Movies</a></li>-->
+<!--        <li class="active"><a href="login.php">Sign In</a></li>-->
+<!--    </ul>-->
+<!--</nav>-->
+<main class="bg2">
+    <img id="bg" src="Pictures/hatter.jpg" alt="Ez egy példa kép" title="Background">
+    <div class="box">
+        <span class="title">Sign In</span>
+        <div class="inputBox">
+            <input type="text" required="required" name="username" id="username" placeholder="Username">
+            <span> Username: </span>
+        </div>
+        <div class="inputBox">
+            <input type="password" required="required" id="password" name="password" placeholder="Password">
+            <span> Password: </span>
+        </div>
+        <div class="button">
+            <input type="submit" value="Sign In"/>
+        </div>
+    </div>
+</main>
 </body>
 </html>

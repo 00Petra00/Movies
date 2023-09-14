@@ -1,14 +1,17 @@
+<?php
+include 'connect.php';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <title>New movie</title>
-    <link rel="stylesheet" href="../style.css"/>
+    <link rel="stylesheet" href="style.css"/>
     <script defer src="add.js"></script>
 </head>
 <body>
 <section class="bg3">
-  <form id="addform" action="index.html" method="GET">
+  <form id="addform" action="index.php" method="GET">
   <div class="box">
     <h2 class="title">Add new favorite</h2>
     <div id="error"></div>
@@ -33,6 +36,7 @@
       <input type="submit" value="Add"/>
     </div>
   </div>
+
   </form>
 </section>
 </body>

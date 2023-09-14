@@ -5,34 +5,30 @@
 
 h1{
     position: relative;
-    margin-top: 20px;
-    margin-left: 20px;
+    margin-top: 15px;
+    margin-left: 45px;
+    font-size: 50px;
+    color: orangered;
 }
 
-#menu{
+h2{
     position: relative;
+    margin-top: 15px;
+    margin-left: 45px;
+    font-size: 50px;
+    font-weight: normal;
 }
+nav{
+    background-color: rgba(17, 17, 17, 0.94);
 
-#menu ul li {
-    list-style: none;
-    display: inline-block;
-    margin: 0 2vw;
-    float: right;
-    padding: 1vw;
 }
-
-#menu ul li a {
-    text-decoration: none;
-    text-transform: uppercase;
-    color: black;
-    font-size: 25px;
-    font-weight: bold;
-}
-
-#menu ul li a:hover {
-    color: beige;
-    transition: all 700ms;
-    cursor: pointer;
+nav .button input{
+    display: flex;
+    align-items: self-end;
+    margin-top: 25px;
+    margin-right: 25px;
+    width: 100px;
+    height: 100%;
 }
 
 #bg{
@@ -123,6 +119,7 @@ h1{
 .button input{
     position: relative;
     margin: 20px auto;
+    width: 100px;
     background-color: rgba(61, 60, 60, 0.75);
     padding: 8px;
     border-radius: 8px;
@@ -145,8 +142,7 @@ h1{
     grid-gap: 0;
 }
 
-
-.pos img{
+.pos img, .tbox{
     width: 10vw;
     display: block;
     border: solid black;
@@ -154,41 +150,16 @@ h1{
     margin: 5% auto 2%;
 }
 
-.text{
-    color: white;
-    font-size: 18px;
-    margin-top: 10px;
+.pos{
+    position: relative;
 }
-
-.b{
-    width: 130px;
-    margin: 0 20px;
-    text-align: center;
-    display: flex;
-    float: left;
-    /*background-color: white;*/
-}
-
-.b img{
-    width: 15%;
-    /*margin-left: 10px;*/
-}
-.title{
-    color: white;
-    font-size: 25px;
-    margin-left: 20px;
-}
-
-/*********************************************************/
-
 .tbox{
     position: absolute;
     border-radius: 5px;
-    margin-top: 70px;
-    margin-left: 51px;
+    border: none;
+    margin-left: 20%;
     top: 0;
-    width: 10%;
-    height: 32.5%;
+    height: 82%;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -218,5 +189,36 @@ h1{
     /*font-style: italic;*/
 
 }
+.text{
+    color: white;
+    font-size: 18px;
+    margin-top: 10px;
+}
 
+.b{
+    width: 130px;
+    margin: 0 20px;
+    text-align: center;
+    display: flex;
+    float: left;
+    /*background-color: white;*/
+}
+
+.b img{
+    width: 15%;
+    /*margin-left: 10px;*/
+}
+.title{
+    color: white;
+    font-size: 25px;
+    margin-left: 20px;
+}
 /*********************************************/
+
+#error{
+    /*background-color: white;*/
+    margin-top: 5px;
+    /*color: #9b0c0c;*/
+    color: orangered;
+    text-align: center;
+}

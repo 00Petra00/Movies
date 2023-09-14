@@ -4,36 +4,33 @@
     <meta charset="UTF-8">
     <title>Index</title>
     <link rel="stylesheet" href="../style.css"/>
+    <script defer src="list.js"></script>
 </head>
 
 <body>
-<nav id="menu">
-    <ul>
-        <li><a href="login.html">Sign Out</a></li>
-        <li class="active" ><a href="index.html">Fav Movies</a></li>
-    </ul>
+<nav>
+    <div class="button">
+        <h1>Movies</h1>
+        <input value="Sign Out"/>
+    </div>
 </nav>
-<main class="bg3">
-    <h1>Movies</h1>
-<!--    <div class="button">-->
-<!--        <input value="Sign Out"/>-->
-<!--    </div>-->
-    <div id="grid">
+<section class="bg3">
+    <div id="grid" class="list">
+
         <div class="pos">
-            <img src="../Pictures/mi.jpg" alt="Kép">
-            <div class="b">
-                <img src="../Pictures/trashcan.png" alt="Kép">
-                <div class="text"> Cím:</div>
-            </div>
-<!--   képre húzva az egeret előjön             -->
+            <img src="../Pictures/1.jpg" alt="Kép">
             <div class="tbox">
-                <div class="ttext"> Rendező:</div>
-                <div class="ttext"> 2023</div>
+                <div class="ttext" id="author"> Rendező:</div>
+                <div class="ttext" id="date"> 2023</div>
             </div>
 
+            <div class="b">
+                <img src="../Pictures/trashcan.png" alt="Kép">
+                <div class="text" id="name"> Cím:</div>
+            </div>
         </div>
         <div class="pos">
-            <img src="../Pictures/mi.jpg" alt="Kép">
+            <img src="../Pictures/2.jpg" alt="Kép">
             <div class="b">
                 <img src="../Pictures/trashcan.png" alt="Kép">
                 <div class="text"> Cím:</div>
@@ -45,7 +42,7 @@
 
         </div>
         <div class="pos">
-            <img src="../Pictures/mi.jpg" alt="Kép">
+            <img src="../Pictures/3.jpg" alt="Kép">
             <div class="b">
                 <img src="../Pictures/trashcan.png" alt="Kép">
                 <div class="text"> Cím:</div>
@@ -56,7 +53,7 @@
             </div>
         </div>
         <div class="pos">
-            <img src="../Pictures/mi.jpg" alt="Kép">
+            <img src="../Pictures/1.jpg" alt="Kép">
             <div class="b">
                 <img src="../Pictures/trashcan.png" alt="Kép">
                 <div class="text"> Cím:</div>
@@ -67,7 +64,7 @@
             </div>
         </div>
         <div class="pos">
-            <img src="../Pictures/mi.jpg" alt="Kép">
+            <img src="../Pictures/2.jpg" alt="Kép">
             <div class="b">
                 <img src="../Pictures/trashcan.png" alt="Kép">
                 <div class="text"> Cím:</div>
@@ -78,7 +75,7 @@
             </div>
         </div>
         <div class="pos">
-            <img src="../Pictures/mi.jpg" alt="Kép">
+            <img src="../Pictures/3.jpg" alt="Kép">
             <div class="b">
                 <img src="../Pictures/trashcan.png" alt="Kép">
                 <div class="text"> Cím:</div>
@@ -89,7 +86,7 @@
             </div>
         </div>
         <div class="pos">
-            <img src="../Pictures/mi.jpg" alt="Kép">
+            <img src="../Pictures/1.jpg" alt="Kép">
             <div class="b">
                 <img src="../Pictures/trashcan.png" alt="Kép">
                 <div class="text"> Cím:</div>
@@ -101,8 +98,8 @@
         </div>
     </div>
     <div class="button">
-        <input value="New favorite"/>
+        <input value="New favorite" onclick="window.location.href = 'newmovie.html'"/>
     </div>
-</main>
+</section>
 </body>
 </html>

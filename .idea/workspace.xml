@@ -5,16 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="193ea74d-e8a5-4deb-914e-9435c02fc91d" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/add.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/list.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/login.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connect.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/index.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/logout.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Movies - Shortcut.lnk" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Pictures/mi.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/newmovie.html" beforeDir="false" afterPath="$PROJECT_DIR$/newmovie.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/style.css" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -65,7 +62,7 @@
       <option name="presentableId" value="Default" />
       <updated>1694618276933</updated>
       <workItem from="1694618278298" duration="19362000" />
-      <workItem from="1694675923921" duration="27090000" />
+      <workItem from="1694675923921" duration="33925000" />
     </task>
     <servers />
   </component>

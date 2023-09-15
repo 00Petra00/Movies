@@ -142,8 +142,15 @@ nav .button input{
     grid-gap: 0;
 }
 
+@media (max-width: 1000px) {
+    #grid {
+        grid-template-columns: 1fr 1fr 1fr
+    }
+}
+
 .pos img, .tbox{
     width: 10vw;
+    height: 70%;
     display: block;
     border: solid black;
     border-radius: 5px;
@@ -155,14 +162,14 @@ nav .button input{
 }
 .tbox{
     position: absolute;
-    border-radius: 5px;
     border: none;
     margin-left: 20%;
     top: 0;
-    height: 82%;
+    height: 72%;
     display: flex;
     flex-direction: column;
     align-items: center;
+    text-align: center;
     justify-content: center;
     background-color: rgb(0,0,0,0.6);
     color: white;
@@ -186,7 +193,6 @@ nav .button input{
 .ttext{
     font-size: 20px;
     font-weight: bold;
-    /*font-style: italic;*/
 
 }
 .text{
@@ -197,10 +203,11 @@ nav .button input{
 
 .b{
     width: 130px;
-    margin: 0 20px;
+    margin: 0 50px;
     text-align: center;
     display: flex;
     float: left;
+
     /*background-color: white;*/
 }
 
@@ -208,6 +215,20 @@ nav .button input{
     width: 15%;
     /*margin-left: 10px;*/
 }
+
+.deletebutton{
+    background-image: url('Pictures/trashcan.png');
+    background-size: cover;
+    background-color: transparent;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
 .title{
     color: white;
     font-size: 25px;

@@ -2,6 +2,10 @@
 session_start();
 include 'connect.php';
 
+if (!isset($_SESSION['username'])) {
+    header(("Location: login.php"));
+    exit();
+}
 ?>
 
 <!DOCTYPE html>
@@ -9,9 +13,8 @@ include 'connect.php';
 <head>
     <meta charset="UTF-8">
     <title>My favorite movies</title>
-    <link rel="shortcut icon" href="Pictures/logo.png">
-    <link rel="stylesheet" href="style.css"/>
-    <script defer src="list.js"></script>
+    <link rel="shortcut icon" href="../Pictures/logo.png">
+    <link rel="stylesheet" href="../style.css"/>
 </head>
 
 <body>
@@ -36,7 +39,7 @@ include 'connect.php';
         $name=$row["name"];
     ?>
         <div class="pos">
-            <img src="Pictures/<?php echo $row['image'] ?>" alt="Kép sikertelen betöltése">
+            <img src="../Pictures/<?php echo $row['image'] ?>" alt="Kép sikertelen betöltése">
             <div class="tbox">
                 <div class="ttext" > <?php echo $row['author'] ?> </div>
                 <div class="ttext" > <?php echo $row['year'] ?> </div>

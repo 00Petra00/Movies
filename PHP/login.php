@@ -8,13 +8,13 @@ include 'connect.php';
 <head>
     <meta charset="UTF-8">
     <title>Login</title>
-    <link rel="shortcut icon" href="Pictures/logo.png">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="../Pictures/logo.png">
+    <link rel="stylesheet" href="../style.css"/>
     <script defer src="login.js"></script>
 </head>
 <body>
 <section class="bg2">
-    <img id="bg" src="Pictures/hatter.jpg" alt="Background" title="Background">
+    <img id="bg" src="../Pictures/hatter.jpg" alt="Background" title="Background">
     <form id="loginform" method="POST">
     <div class="box">
         <h2 class="title">Sign In</h2>

@@ -8,8 +8,8 @@ include 'connect.php';
 <head>
     <meta charset="UTF-8">
     <title>New movie</title>
-    <link rel="shortcut icon" href="Pictures/logo.png">
-    <link rel="stylesheet" href="style.css"/>
+    <link rel="shortcut icon" href="../Pictures/logo.png">
+    <link rel="stylesheet" href="../style.css"/>
     <script defer src="add.js"></script>
 </head>
 <body>
@@ -67,7 +67,7 @@ include 'connect.php';
             $newImageName = uniqid();
             $newImageName .= '.' . $imageExtension;
 
-            move_uploaded_file($tmpName, 'Pictures/' . $newImageName);
+            move_uploaded_file($tmpName, '../Pictures/' . $newImageName);
             $image = $newImageName;
 
 
